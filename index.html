@@ -3,10 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/my-style.css">
+    <title>js-simon</title>
 </head>
 <body>
-    
+    <h1>Indovina i numeri</h1>
+    <button id="startButton">Inizia</button>
+    <div id="numbersContainer"></div>
+    <div id="userInputContainer" style="display: none;">
+        <input id="userInput" type="number" min="1" max="100">
+        <button id="submitButton">Invia</button>
+    </div>
+    <div id="resultContainer" style="display: none;">
+        <p>Risultato: <span id="correctCount">0</span> numeri indovinati.</p>
+        <p>Numeri indovinati: <span id="correctNumbers"></span></p>
+    </div>
 
     <script src="js/script.js"></script>
 </body>
